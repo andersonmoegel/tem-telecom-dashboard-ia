@@ -1,116 +1,282 @@
-# TEM Telecom FinOps — Cockpit Executivo
+# 🚀 TEM Telecom Dashboard IA
 
-Dashboard em Streamlit para análise financeira de telecom, baseado automaticamente na planilha mais recente da pasta `uploads` ou em arquivo enviado pelo usuário pela tela.
+## Visão Geral
 
-## O que foi melhorado nesta versão
+O **TEM Telecom Dashboard IA** é uma plataforma de **Telecom Expense Management (TEM)** desenvolvida para centralizar, analisar e otimizar gastos de telecomunicações corporativas.
 
-- **Visual executivo:** paleta mais corporativa com azul, ciano, verde, amarelo e vermelho; menos excesso de gradientes e melhor leitura.
-- **KPIs com contexto:** cards mostram valor, comparação recente, meta sugerida e alerta de revisão.
-- **Tendência executiva:** faixa com mini gráfico dos últimos períodos para leitura rápida da evolução.
-- **Insights automáticos:** cards de concentração, maior impacto financeiro e auditoria.
-- **Gráficos mais analíticos:** roscas/pizzas foram substituídas por barras horizontais com participação percentual onde faz mais sentido.
-- **Cascata FinOps:** novo visual `Contratado x realizado`, mostrando contratado, ajustes, diferenças e realizado.
-- **IA mais presente:** painel lateral com contexto atual e botão para abrir o assistente executivo.
-- **Base dinâmica:** o sistema agora lê automaticamente o arquivo Excel mais recente em `uploads`, permitindo adicionar novas bases mantendo a estrutura.
+A solução combina **Business Intelligence, Analytics, Inteligência Artificial e Gestão Financeira Telecom**, permitindo que gestores identifiquem oportunidades de economia, monitorem contratos, acompanhem faturas e obtenham insights executivos em tempo real.
 
-## Como executar
+O projeto foi desenvolvido como demonstração de uma solução moderna de gestão corporativa utilizando Python, Streamlit, IA Generativa e visualizações analíticas avançadas.
+
+---
+
+## ✨ Principais Funcionalidades
+
+### 📊 Dashboard Executivo
+
+* KPIs financeiros e operacionais
+* Visão consolidada da operação
+* Comparação entre períodos
+* Indicadores estratégicos
+* Tendências e previsões
+
+### ☎️ Gestão Telecom
+
+* Telefonia móvel
+* Telefonia fixa
+* Links de internet
+* Serviços corporativos
+* Contratos telecom
+* Faturas e lançamentos financeiros
+
+### 🏢 Estrutura Corporativa
+
+* Multiempresa
+* Multiunidade
+* Multioperadora
+* Centros de custo
+* Contratos
+* Serviços
+
+### 🤖 Inteligência Artificial
+
+* Resumos executivos automáticos
+* Análise contextual dos dados
+* Identificação de oportunidades de redução
+* Respostas em linguagem natural
+* Insights operacionais e financeiros
+
+### 📈 Analytics Avançado
+
+* Forecast de gastos
+* Evolução temporal
+* Distribuição por operadora
+* Distribuição por filial
+* Distribuição por centro de custo
+* Ranking de fornecedores
+* Tendências de consumo
+
+### 🚨 Alertas Inteligentes
+
+* Contratos próximos do vencimento
+* Variações anormais de consumo
+* Oportunidades de economia
+* Desvios financeiros
+* Indicadores de atenção operacional
+
+---
+
+## 📊 Base Demonstrativa
+
+A versão pública contém uma base de dados totalmente fictícia criada exclusivamente para demonstração.
+
+### Estrutura da Base
+
+| Item                    | Quantidade |
+| ----------------------- | ---------: |
+| Empresas                |          3 |
+| Filiais                 |         24 |
+| Centros de Custo        |         18 |
+| Operadoras              |          8 |
+| Contratos               |        120 |
+| Serviços                |        450 |
+| Lançamentos Financeiros |     7.500+ |
+
+---
+
+## 🖥️ Telas Principais
+
+### Central Executiva
+
+Painel estratégico contendo:
+
+* Gasto total
+* Economia potencial
+* Economia realizada
+* Índice Telecom
+* Contratos vigentes
+* Contratos a vencer
+* Evolução financeira
+
+### Operações Telecom
+
+Visão detalhada de:
+
+* Operadoras
+* Contratos
+* Serviços
+* Faturas
+* Custos
+
+### Centro de Oportunidades
+
+Identificação automática de:
+
+* Reduções possíveis
+* Consolidações de contratos
+* Serviços ociosos
+* Ajustes financeiros
+
+### Tendências e Forecast
+
+Análise preditiva baseada em:
+
+* Histórico de consumo
+* Evolução dos gastos
+* Tendências operacionais
+
+### Assistente IA
+
+Chat inteligente capaz de responder perguntas como:
+
+* Qual filial possui maior gasto?
+* Qual operadora representa maior custo?
+* Onde existem oportunidades de economia?
+* Quais contratos vencem nos próximos meses?
+* Qual centro de custo consome mais recursos?
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Backend
+
+* Python
+* Pandas
+* NumPy
+* OpenPyXL
+
+### Frontend
+
+* Streamlit
+* HTML
+* CSS
+
+### Visualização
+
+* Plotly
+* Plotly Express
+
+### Inteligência Artificial
+
+* Google Generative AI
+* Processamento de linguagem natural
+* Resumos executivos automáticos
+
+### Manipulação de Dados
+
+* Excel (.xlsx)
+* CSV
+* DataFrames Pandas
+
+---
+
+## 📦 Instalação
+
+### Clonar Repositório
+
+```bash
+git clone https://github.com/andersonmoegelo/tem-telecom-dashboard-ia.git
+
+cd tem-telecom-dashboard-ia
+```
+
+### Instalar Dependências
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Executar Aplicação
+
+```bash
 streamlit run app.py
 ```
 
-Ou use:
+Ou simplesmente:
 
 ```bash
 run_app.bat
 ```
 
-## Como atualizar a base
+---
 
-Coloque uma nova planilha `.xlsx` ou `.xls` na pasta:
+## 📂 Estrutura do Projeto
 
 ```text
-uploads/
+TEM Telecom Dashboard IA
+│
+├── app.py
+├── requirements.txt
+├── run_app.bat
+│
+├── uploads/
+├── assets/
+├── dados/
+├── relatorios/
+│
+├── components/
+├── utils/
+├── analytics/
+└── ai/
 ```
 
-O app vai priorizar automaticamente o arquivo Excel mais recente da pasta. Também é possível atualizar pela própria sidebar usando **Atualizar base**.
+---
 
-## Estrutura esperada da planilha
+## 🔒 Privacidade e Segurança
 
-O app procura principalmente pela aba `tbFinanceiro` e complementa os dados com abas como:
+Todos os dados presentes nesta versão são fictícios.
 
-- `tbFornecedor`
-- `tbServicos`
-- `tbFilial`
-- `tbCentroCusto`
+Nenhuma informação corporativa, contratual, financeira ou operacional real foi utilizada.
 
-A estrutura pode receber novas operadoras, serviços, contratos e lançamentos. Campos ausentes são tratados com valores padrão sempre que possível, mantendo o dashboard carregado.
+Empresas, contratos, filiais, centros de custo, responsáveis, valores e demais registros foram gerados exclusivamente para fins de demonstração.
 
-## IA
+Qualquer semelhança com organizações reais é mera coincidência.
 
-A IA usa Gemini quando existir uma chave no `.env`:
+---
 
-```env
-GEMINI_API_KEY=sua_chave
-```
+## 🎯 Objetivos do Projeto
 
-Também aceita:
+* Demonstrar conhecimentos em Python
+* Demonstrar capacidades de análise de dados
+* Demonstrar construção de dashboards corporativos
+* Demonstrar integração com IA
+* Demonstrar habilidades em automação empresarial
+* Demonstrar arquitetura de aplicações analíticas
 
-```env
-GOOGLE_API_KEY=sua_chave
-```
+---
 
-Sem chave, o app usa resumo local automático.
+## 🚀 Possíveis Evoluções
 
-## Atualização V58 — Ver mais e filtro por clique
+* API REST
+* Banco de dados SQL
+* Controle de usuários
+* Autenticação corporativa
+* Deploy em nuvem
+* Integração SAP
+* Integração ServiceNow
+* Integração Power BI
+* Machine Learning para previsão de custos
+* Gestão documental de contratos
 
-Esta versão corrige o detalhamento dos gráficos e melhora o comportamento de análise:
+---
 
-- Cada **Ver mais** mostra os dados relacionados ao visual selecionado.
-- O detalhamento inclui rankings, quebras complementares, contratos/faturas e lançamentos auditáveis.
-- Os botões manuais de filtro abaixo dos gráficos foram removidos.
-- O painel passa a filtrar por clique em barras, pontos ou fatias dos gráficos, usando `streamlit-plotly-events` quando disponível.
+## 👨‍💻 Autor
 
-Para instalar as dependências atualizadas:
+Anderson Moegel
 
-```bash
-pip install -r requirements.txt
-```
+Desenvolvedor de Sistemas | Automação | Dados | Inteligência Artificial
 
+Especializado em soluções corporativas, analytics, automação de processos e desenvolvimento de aplicações orientadas a negócios.
 
-## V59 — Analytics Fix e detalhamento avançado
+---
 
-Esta versão corrige o gráfico **Top fornecedores**, reforça o filtro global dos visuais e melhora os detalhamentos **Ver mais**. Também adiciona visuais analíticos extras: heatmap fornecedor x mês, exposição por contrato, anomalias de serviços e treemap fornecedor → serviço.
+## ⭐ Apoie o Projeto
 
+Se este projeto foi útil para você:
 
-## V63 — Diagnóstico executivo e maturidade analítica
+* Deixe uma estrela no repositório
+* Compartilhe com outros profissionais
+* Envie sugestões de melhorias
 
-Esta versão adiciona uma camada de análise executiva sobre os dados da pasta `uploads`:
-
-- Diagnóstico automático do período filtrado.
-- Alertas inteligentes para concentração, variação, diferenças, anomalias e governança.
-- Painel de oportunidades com estimativa inicial de economia.
-- Qualidade dos dados para explicar inconsistências e orientar saneamento da base.
-- Exportação de relatório executivo em Markdown.
-- Detalhamentos com descrição e caminho de investigação: Fornecedor → Contrato → Serviço → Fatura → Lançamento.
-
-A base continua dinâmica: novos arquivos Excel podem ser adicionados em `uploads`, mantendo a mesma estrutura principal de abas e colunas.
-
-
-## Base demonstrativa pública
-
-A planilha `TelecomDB_exemplo.xlsx` foi ajustada para demonstrar o potencial do dashboard sem expor dados corporativos reais:
-
-- Localidades fictícias/profissionais, como `Unidade de São Paulo`, `Hub Corporativo Curitiba` e `Centro Operacional Campinas`.
-- Centros de custo fictícios com códigos e descrições, como `CC-1101 — TI - Infraestrutura e Redes` e `CC-1402 — Financeiro - Contas a Pagar`.
-- Lançamentos distribuídos em múltiplos meses para evidenciar tendência, comparação por período, alertas, variações, contestação e oportunidades de economia.
-- Contratos, faturas, códigos de cliente, empresas e chaves de acesso totalmente demonstrativos, sem referência corporativa real.
-
-## Segurança dos dados
-
-Este repositório foi higienizado para publicação pública. A planilha `TelecomDB_exemplo.xlsx` contém dados fictícios/demonstrativos. Arquivos reais enviados pelo usuário devem ficar apenas na pasta `uploads/`, que está protegida no `.gitignore`. Não publique `.env`, bases reais, caches ou arquivos gerados em `dados_atualizados/`.
-
-## Aviso sobre dados demonstrativos
-
-Todos os dados, empresas, filiais, centros de custo, contratos, endereços, CNPJs e responsáveis utilizados neste projeto são fictícios e foram criados exclusivamente para demonstração pública das funcionalidades do dashboard. Qualquer semelhança com empresas, pessoas, contratos ou operações reais é mera coincidência.
+Toda contribuição é bem-vinda.
